@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <meta name="description" content="Expenses chart component">
+  <meta name="author" content="Jelena Randjelovic">
+  <meta name="keywords" content="Expenses chart component, chart, balance, frontend mentor, spending">
+  <title>Frontend Mentor | Expenses chart component</title>
+  <!--Logo-->
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <!--Css-->
+  <link rel="stylesheet" type="text/css" href="css/styles.css">
+</head>
+<body class="flex-center">
+
+  <div class="card-container">
+    <div class="balance-card flex-center">
+      <div class="wrapper">
+        <p class="text">My balance</p>
+        <data class="h2" value="921.48">$921.48</data>
+      </div>
+      <a href="#">
+        <img src="images/logo.svg" alt="balance logo, illustration of two circles" class="logo"/>
+      </a>
+    </div>
+   
+    <div class="chart-card">
+      <h3 class="h2">Spending - Last 7 days</h3>
+      <table class="card-table">
+        <tbody class="table-body flex-center">
+          <tr class="table-row flex-center">
+            <th class="table-heading" scope="col">mon</th>
+            <td class="table-data">
+              <div class="chart-bar" data-chart-bar="mon"></div>
+            </td>
+          </tr>
+
+          <tr class="table-row flex-center">
+            <th class="table-heading" scope="col">tue</th>
+            <td class="table-data">
+              <div class="chart-bar" data-chart-bar="tue"></div>
+            </td>
+          </tr>
+
+          <tr class="table-row flex-center">
+            <th class="table-heading" scope="col">wed</th>
+            <td class="table-data">
+              <div class="chart-bar" data-chart-bar="wed"></div>
+            </td>
+          </tr>
+
+          <tr class="table-row flex-center">
+            <th class="table-heading" scope="col">thu</th>
+            <td class="table-data">
+              <div class="chart-bar" data-chart-bar="thu"></div>
+            </td>
+          </tr>
+
+          <tr class="table-row flex-center">
+            <th class="table-heading" scope="col">fri</th>
+            <td class="table-data">
+              <div class="chart-bar" data-chart-bar="fri"></div>
+            </td>
+          </tr>
+
+          <tr class="table-row flex-center">
+            <th class="table-heading" scope="col">sat</th>
+            <td class="table-data">
+              <div class="chart-bar" data-chart-bar="sat"></div>
+            </td>
+          </tr>
+
+          <tr class="table-row flex-center">
+            <th class="table-heading" scope="col">sun</th>
+            <td class="table-data">
+              <div class="chart-bar" data-chart-bar="sun"></div>
+            </td>
+          </tr>
+        </tbody>
+      </table>
+    
+      <span class="tooltip text" data-tooltip>30.52</span>
+      <div class="wrapper flex-center">
+        <div class="card-meta">
+          <p class="text">Total this month</p>
+          <data class="meta-value" value="478.33">$478.33</data>
+        </div>
+    
+        <div class="card-meta">
+          <data class="meta-value small" value="2.4">+2.4%</data>
+          <p class="text">from last month</p>
+        </div>
+      </div>
+   
+  </div>
+</div>
+
+
+  <!--JavaScript File-->
+  <script type="module" src="js/main.js"></script>
+</body>
+</html>
